@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* Utilities  */
+:root {
+  --clr-dark-600: #23252c;
+  --clr-dark-700: #1a1b21;
+  --clr-dark-900: #161619;
+  --clr-white: #fff;
+  --clr-blue: #5093e2;
+  --clr-accent: #f3bf99;
+  --base-font: "Inter", sans-serif;
+}
+
+span {
+  display: block;
+}
+
+* {
+  font-family: var(--base-font);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: var(--clr-dark-600);
+  height: calc(100vh + 100px);
+  padding: 2rem 117px;
+}
+
+.card {
+  --glow-color: var(--clr-dark-600);
+  --glow-spread-color: var(--clr-dark-900);
+  --enhanced-glow-color: #222121;
+  margin: 0 auto;
+  max-width: 340px;
+  background-color: var(--clr-dark-700);
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px var(--clr-dark-700), -5px -10px 25px var(--clr-dark-900);
+}
+
+.card--cover-image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 220px;
+  padding: 1rem;
+  background: url(./assets/IMG-20220611-WA0022.jpg) no-repeat center 20%;
+  background-size: cover;
+}
+
+.card--body {
+  padding: 0 34px;
+}
+
+.card--about {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  color: #fff;
+}
+.card--about h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.card--about span:nth-of-type(1) {
+  font-size: 12.8px;
+  color: var(--clr-accent) !important;
+  margin-bottom: 0.3rem;
+}
+
+.card--about span:nth-last-child(1) {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.btn-light {
+  background-color: var(--clr-white);
+  border: var(--clr-white);
+}
+
+.btn-light:hover {
+  filter: grayscale(60%);
+}
+
+.btn-blue {
+  color: white;
+  border: var(--clr-blue);
+  background-color: var(--clr-blue);
+}
+
+.btn-blue:hover {
+  filter: grayscale(12%);
+}
+
+.card--intro {
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+  color: var(--clr-white);
+}
+
+.card--intro h2 {
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.card--intro p {
+  font-size: 10.5px;
+}
+
+.card--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: var(--clr-dark-900);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
